@@ -14,6 +14,72 @@ It is three things and a purpose:
 
 Everything else is scaffolding around those three.
 
+An idea and an environment, in roughly equal measure. The environment is the
+three things above, running. The idea is that a business should own the record
+of its own marketing, and that owning it is what makes the marketing work.
+
+---
+
+## Identity
+
+A cosmic is a named thing, and it is **paired back to a company account**.
+
+```
+company account
+  └── owner              assumed authorized
+       └── cosmic        the environment: data, site, vault
+            └── keys     one vault, scoped to this company
+                 └── connected properties
+```
+
+**We assume the owner of the account is authorized.** That assumption is worth
+stating plainly rather than leaving implicit, because everything downstream
+rests on it: every grant, every consent record, every key handed over. If the
+person who opened the account cannot actually speak for the business, nothing
+below them in that chain is sound.
+
+Lucky carries the machinery for this — who granted what, when, and on whose
+authority, and the idea of a **prime**: the person who can speak for an account
+when authority is in question. An account with no prime is an account nobody
+can speak for. A cosmic inherits its authority from that chain rather than
+asserting its own.
+
+---
+
+## The circle of trust
+
+Lucky automates building a circle of trust around the **owner** — the
+connected, verified properties that together say *this business exists, it is
+who it claims to be, and these details agree*.
+
+The useful part is that **one act does two jobs**. Connecting a property is
+normally filed as an administrative chore, something to get through before the
+marketing starts. It is not:
+
+| Connecting a property | Gives data | Improves local visibility |
+| :--- | :---: | :---: |
+| Google Business Profile | reviews, Q&A, photos, hours, insights | **yes — the strongest local asset there is** |
+| Domain and DNS | delegation, mail authentication, certificates | foundational; nothing ranks on a broken zone |
+| Search Console | what people searched, what Google decided | verification and coverage |
+| Hosting and application | logs, submissions, the real content model | speed, crawlability, correctness |
+| Field-service system | what people actually bought, and where | the evidence for which pages should exist |
+
+So the answer to *"why should I give you access to all this?"* is not "so we can
+do our job". It is: **granting access is itself the first piece of the work.**
+Each connection makes the business more legible to the systems that decide local
+visibility, and starts a record that nobody is keeping today.
+
+That reframing matters for how it is sold. Access stops being a cost the
+customer pays up front for a benefit that arrives later, and becomes the benefit
+arriving in instalments — which is also why each connection should be reported
+back the moment it lands.
+
+Note the one that is doing the most work here is the least exercised: **Google
+Business Profile**. It is both the richest local-visibility asset and a genuine
+data source, and on the first instance it has never been successfully read — the
+service account is provisioned for it, but the only attempt so far returned a
+quota error.
+
 ---
 
 ## Why it is defined this way
