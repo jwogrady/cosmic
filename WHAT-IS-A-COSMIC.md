@@ -230,6 +230,70 @@ quarter cannot. Where the two are in tension, collect first.
 
 ---
 
+## The data becomes the site
+
+Collecting is not the end of it. The data produces **content and media**, and
+that gets published. This is the loop the whole thing runs on:
+
+```
+keys  →  data  →  content and media  →  published site
+  ↑                                           │
+  └────  visibility  ←  circle of trust  ←────┘
+```
+
+Each turn feeds the next. Connected properties produce data; data produces
+pages; pages improve visibility; visibility produces more data worth having.
+
+### What the data actually produces
+
+This is concrete, not aspirational. From the first instance:
+
+| Source | Becomes |
+| :--- | :--- |
+| Jobs and line items | service pages that exist because people **bought** that service, priced from what was actually charged |
+| Geocoded job addresses | service-area pages backed by where work really happened — without publishing a customer address |
+| Landing-page traffic | which pages earn entry traffic, and which subjects have demand but no page |
+| Form submissions | the questions people actually ask, in their words |
+| Business Profile | reviews, hours, photos — the media and social proof, at the source |
+| The existing site | the media library and content model, so nothing is lost in the move |
+
+The difference from a conventional build is where the service list comes from.
+A keyword tool tells you what people typed. The job ledger tells you what people
+**paid for** — evidence that survived the step where somebody handed over money.
+When the two disagree, the ledger is the better guide to which pages deserve to
+exist.
+
+### The failure mode this must not become
+
+Generating pages from data is also how doorway pages get made: one template,
+two hundred towns, nothing on any of them that a human needed. Search engines
+have penalised that for over a decade, and a local business is exactly the
+target market for it.
+
+The line is not "was it generated". It is **whether the evidence demanded the
+page**:
+
+- A service-area page is legitimate when work was actually done in that area,
+  and the page says something true about that area that is not true of the next
+  one. It is a doorway page when a loop iterated over a list of towns.
+- A service page is legitimate when the service was sold, priced and described
+  from records. It is filler when a template had a slot.
+- Media is legitimate when it came from the work. Stock photography of someone
+  else's van is the visual version of the same lie.
+
+The discipline that keeps it honest: **every published page should be traceable
+to the records that justified it.** If nothing in the store demanded a page, the
+page should not exist — and because the store is queryable, that is a check
+rather than a matter of taste.
+
+One measured example of the gap this is meant to close: on the first instance,
+the site declares **111 URLs** in its sitemap while analytics recorded entry
+traffic on **1898 landing pages**. Those are not 1787 missing pages to generate.
+They are 1787 pieces of evidence about what people were looking for, most of
+which will justify nothing, and some of which will justify something real.
+
+---
+
 ## Capability arrives in tiers
 
 A cosmic produces value before the customer has handed over anything, and more
