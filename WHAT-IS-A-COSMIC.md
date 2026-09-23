@@ -45,7 +45,8 @@ Search Console holds a rolling window. An analytics product keeps what its
 current plan says it keeps. None of it is guaranteed to exist next year.
 
 Landing a copy in a store the customer owns is the difference between reporting
-on a business and renting the ability to.
+on a business and renting the ability to. See **we are packrats**, below, for
+what that is worth in months.
 
 ### Netlify — their site
 
@@ -121,6 +122,45 @@ convert.
 This ordering is also the only one available, which is what makes it more than
 a slogan: **marketability is computable from first-party data alone**, while
 visibility requires a vendor to grant access first.
+
+---
+
+## We are packrats
+
+Vendors delete your data on a schedule. We do not.
+
+| Source | What it keeps |
+| :--- | :--- |
+| GA4 | event-level data for **14 months** at most |
+| Search Console | a **16-month** rolling window |
+| Most vendor APIs | whatever the current plan says, changeable at their discretion |
+
+Those are not outages. They are the products working as designed, quietly, on
+a timer. A business that has been trading for nine years can ask its analytics
+what happened in 2019 and be told nothing at all — not "no data", just a chart
+that starts when the retention window starts.
+
+**A cosmic does not have a retention window.** We collect on a schedule, we keep
+what we collect, we back it up, and when a customer outgrows the store they are
+in we move them into a bigger one. Nobody gets cut off at fourteen months.
+
+This is the practical end of "the data store is theirs". A copy that gets
+deleted on the vendor's timetable is not ownership; it is a longer loan. Keeping
+everything is what makes the earlier claim true rather than rhetorical.
+
+### The clock is the reason to start
+
+Every month a source is not connected is a month of that source's data ageing
+out of a window it never comes back from. This has already happened on the
+first instance: Search Console has never successfully captured a file, and
+sixteen months is the whole history it would have had.
+
+**No amount of first-party access recovers it.** What people searched for and
+what the search engine decided are the two things that live outside the
+property by construction. When that window rolls, the record is simply gone.
+
+Which means a crude scheduled capture today preserves things a perfect one next
+quarter cannot. Where the two are in tension, collect first.
 
 ---
 
