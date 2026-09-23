@@ -1,5 +1,44 @@
 # What a cosmic is
 
+> [!WARNING]
+> **Not authoritative, and partly wrong.** This was written from conversation
+> before its author found the existing specifications. It conflicts with them
+> in at least one structural way — see *Status* below — and must not be used
+> as a reference.
+>
+> The authoritative sources are:
+>
+> - **[jwogrady/leboss](https://github.com/jwogrady/leboss)** — the LEBOSS
+>   standard (v0.1.0-rc): 115 normative rules in 19 groups, six Elements,
+>   two conformance tiers, three governance objects.
+> - **[jwogrady/cosmos-docs](https://github.com/jwogrady/cosmos-docs)** — the
+>   implementation: Cosmic identity, minting, governance, membership, assets,
+>   with ADRs and decision records.
+>
+> ## Status
+>
+> This document defines a cosmic as *"Supabase, Netlify and a credential
+> vault"*. That is an infrastructure description, not an identity, and it
+> flattens things the standard keeps apart:
+>
+> - LEBOSS separates the **Star** (the customer-facing site) from the
+>   **Planet** (the backend holding primary operational data). This document
+>   treats them as one object.
+> - A Cosmic in `cosmos-docs` is an **identity** — `cosmic_ref`, `kind`,
+>   status, a governing Cosmic, a Prime, a first Membership and an audit
+>   record, minted atomically. Supabase and Netlify are *assets* it holds, not
+>   what it is.
+> - Third-party platforms — GA4, Search Console, Business Profile, Housecall
+>   Pro — are **Satellites** in LEBOSS, the element carrying the greatest
+>   sovereignty risk and requiring explicit authorization and audit. This
+>   document does not name them as a distinct class at all.
+>
+> Retained only because some sections may be useful as sales and method
+> material rather than as a definition: the vendor-retention argument, the
+> circle-of-trust framing, the doorway-page guardrail, and the recurring
+> failure mode. Each needs checking against the standard before reuse.
+
+
 A **cosmic** is one customer's marketing infrastructure, owned by that customer,
 assembled and operated by us.
 
